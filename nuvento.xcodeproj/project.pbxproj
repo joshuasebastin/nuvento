@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		424ED8382C9EA89600C5F978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424ED8372C9EA89600C5F978 /* AppDelegate.swift */; };
+		424ED83A2C9EA89600C5F978 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424ED8392C9EA89600C5F978 /* SceneDelegate.swift */; };
+		424ED83F2C9EA89600C5F978 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 424ED83E2C9EA89600C5F978 /* Base */; };
+		424ED8422C9EA89600C5F978 /* nuvento.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 424ED8402C9EA89600C5F978 /* nuvento.xcdatamodeld */; };
+		424ED8442C9EA89700C5F978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 424ED8432C9EA89700C5F978 /* Assets.xcassets */; };
+		424ED8472C9EA89700C5F978 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 424ED8462C9EA89700C5F978 /* Base */; };
+		424ED8502C9EA93700C5F978 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 424ED84F2C9EA93700C5F978 /* GoogleSignIn */; };
+		424ED8522C9EA93700C5F978 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 424ED8512C9EA93700C5F978 /* GoogleSignInSwift */; };
+		42E5844D2C9EB59F00E79D6F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5844C2C9EB59F00E79D6F /* LoginViewController.swift */; };
+		42E584512C9EC94A00E79D6F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E584502C9EC94A00E79D6F /* CoreDataManager.swift */; };
+		42E584542C9ECC3800E79D6F /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E584532C9ECC3800E79D6F /* CoreDataModel.swift */; };
+		42E584582C9EDA3600E79D6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E584572C9EDA3600E79D6F /* HomeViewController.swift */; };
+		42E5845C2C9EDC1800E79D6F /* DevicesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5845A2C9EDC1800E79D6F /* DevicesListTableViewCell.swift */; };
+		42E5845D2C9EDC1800E79D6F /* DevicesListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E5845B2C9EDC1800E79D6F /* DevicesListTableViewCell.xib */; };
+		42E584602C9EDFD500E79D6F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5845F2C9EDFD500E79D6F /* NetworkManager.swift */; };
+		42E584632C9EE07B00E79D6F /* GoogleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E584622C9EE07B00E79D6F /* GoogleSignInManager.swift */; };
+		42E584662C9EF3B300E79D6F /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E584652C9EF3B300E79D6F /* Webservice.swift */; };
+		42E584692C9EF3F200E79D6F /* AddDeviceDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E584682C9EF3F200E79D6F /* AddDeviceDetailsModel.swift */; };
+		42E5846C2C9EF43200E79D6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5846B2C9EF43200E79D6F /* Constants.swift */; };
+		42E5846F2C9EF62D00E79D6F /* ipAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5846E2C9EF62D00E79D6F /* ipAddressModel.swift */; };
+		42E584712C9EF6CA00E79D6F /* DetailsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E584702C9EF6CA00E79D6F /* DetailsScreenViewController.swift */; };
+		42E584732C9EF73F00E79D6F /* IPAddressInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E584722C9EF73F00E79D6F /* IPAddressInfoModel.swift */; };
+		42E584752C9EFED600E79D6F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E584742C9EFED600E79D6F /* Extension.swift */; };
+		42E584772C9F079600E79D6F /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E584762C9F079600E79D6F /* CustomLoader.swift */; };
+		42E584792C9F0B1300E79D6F /* LoaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E584782C9F0B1300E79D6F /* LoaderManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		424ED8342C9EA89600C5F978 /* nuvento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nuvento.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		424ED8372C9EA89600C5F978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		424ED8392C9EA89600C5F978 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		424ED83E2C9EA89600C5F978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		424ED8412C9EA89600C5F978 /* nuvento.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nuvento.xcdatamodel; sourceTree = "<group>"; };
+		424ED8432C9EA89700C5F978 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		424ED8462C9EA89700C5F978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		424ED8482C9EA89700C5F978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42E5844C2C9EB59F00E79D6F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		42E584502C9EC94A00E79D6F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		42E584532C9ECC3800E79D6F /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
+		42E584572C9EDA3600E79D6F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		42E5845A2C9EDC1800E79D6F /* DevicesListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesListTableViewCell.swift; sourceTree = "<group>"; };
+		42E5845B2C9EDC1800E79D6F /* DevicesListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevicesListTableViewCell.xib; sourceTree = "<group>"; };
+		42E5845F2C9EDFD500E79D6F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		42E584622C9EE07B00E79D6F /* GoogleSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInManager.swift; sourceTree = "<group>"; };
+		42E584652C9EF3B300E79D6F /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		42E584682C9EF3F200E79D6F /* AddDeviceDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceDetailsModel.swift; sourceTree = "<group>"; };
+		42E5846B2C9EF43200E79D6F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		42E5846E2C9EF62D00E79D6F /* ipAddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ipAddressModel.swift; sourceTree = "<group>"; };
+		42E584702C9EF6CA00E79D6F /* DetailsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreenViewController.swift; sourceTree = "<group>"; };
+		42E584722C9EF73F00E79D6F /* IPAddressInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAddressInfoModel.swift; sourceTree = "<group>"; };
+		42E584742C9EFED600E79D6F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		42E584762C9F079600E79D6F /* CustomLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoader.swift; sourceTree = "<group>"; };
+		42E584782C9F0B1300E79D6F /* LoaderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		424ED8312C9EA89600C5F978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424ED8502C9EA93700C5F978 /* GoogleSignIn in Frameworks */,
+				424ED8522C9EA93700C5F978 /* GoogleSignInSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		424ED82B2C9EA89600C5F978 = {
+			isa = PBXGroup;
+			children = (
+				424ED8362C9EA89600C5F978 /* nuvento */,
+				424ED8352C9EA89600C5F978 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		424ED8352C9EA89600C5F978 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				424ED8342C9EA89600C5F978 /* nuvento.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		424ED8362C9EA89600C5F978 /* nuvento */ = {
+			isa = PBXGroup;
+			children = (
+				42E5846D2C9EF61E00E79D6F /* Model */,
+				42E5846A2C9EF41200E79D6F /* Utils */,
+				42E584672C9EF3C700E79D6F /* View Models */,
+				42E584642C9EF39B00E79D6F /* Services */,
+				42E584612C9EE05C00E79D6F /* GoogleSignIn */,
+				42E5845E2C9EDFC700E79D6F /* Network */,
+				42E584592C9EDBFA00E79D6F /* Cells */,
+				42E584522C9ECC2400E79D6F /* CoredataModel */,
+				42E5844F2C9EC93E00E79D6F /* CoreDataManager */,
+				42E5847C2C9F141D00E79D6F /* Main */,
+				42E5844E2C9EC90800E79D6F /* Controller */,
+				42E5847B2C9F140A00E79D6F /* View */,
+				42E5847A2C9F13EC00E79D6F /* Resources */,
+				424ED8482C9EA89700C5F978 /* Info.plist */,
+				424ED8402C9EA89600C5F978 /* nuvento.xcdatamodeld */,
+			);
+			path = nuvento;
+			sourceTree = "<group>";
+		};
+		42E5844E2C9EC90800E79D6F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42E5844C2C9EB59F00E79D6F /* LoginViewController.swift */,
+				42E584572C9EDA3600E79D6F /* HomeViewController.swift */,
+				42E584702C9EF6CA00E79D6F /* DetailsScreenViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42E5844F2C9EC93E00E79D6F /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				42E584502C9EC94A00E79D6F /* CoreDataManager.swift */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		42E584522C9ECC2400E79D6F /* CoredataModel */ = {
+			isa = PBXGroup;
+			children = (
+				42E584532C9ECC3800E79D6F /* CoreDataModel.swift */,
+			);
+			path = CoredataModel;
+			sourceTree = "<group>";
+		};
+		42E584592C9EDBFA00E79D6F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				42E5845A2C9EDC1800E79D6F /* DevicesListTableViewCell.swift */,
+				42E5845B2C9EDC1800E79D6F /* DevicesListTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		42E5845E2C9EDFC700E79D6F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				42E5845F2C9EDFD500E79D6F /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		42E584612C9EE05C00E79D6F /* GoogleSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				42E584622C9EE07B00E79D6F /* GoogleSignInManager.swift */,
+			);
+			path = GoogleSignIn;
+			sourceTree = "<group>";
+		};
+		42E584642C9EF39B00E79D6F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				42E584652C9EF3B300E79D6F /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		42E584672C9EF3C700E79D6F /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				42E584682C9EF3F200E79D6F /* AddDeviceDetailsModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		42E5846A2C9EF41200E79D6F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				42E5846B2C9EF43200E79D6F /* Constants.swift */,
+				42E584742C9EFED600E79D6F /* Extension.swift */,
+				42E584762C9F079600E79D6F /* CustomLoader.swift */,
+				42E584782C9F0B1300E79D6F /* LoaderManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		42E5846D2C9EF61E00E79D6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42E5846E2C9EF62D00E79D6F /* ipAddressModel.swift */,
+				42E584722C9EF73F00E79D6F /* IPAddressInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42E5847A2C9F13EC00E79D6F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				424ED8432C9EA89700C5F978 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		42E5847B2C9F140A00E79D6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				424ED83D2C9EA89600C5F978 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42E5847C2C9F141D00E79D6F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				424ED8372C9EA89600C5F978 /* AppDelegate.swift */,
+				424ED8392C9EA89600C5F978 /* SceneDelegate.swift */,
+				424ED8452C9EA89700C5F978 /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		424ED8332C9EA89600C5F978 /* nuvento */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 424ED84B2C9EA89700C5F978 /* Build configuration list for PBXNativeTarget "nuvento" */;
+			buildPhases = (
+				424ED8302C9EA89600C5F978 /* Sources */,
+				424ED8312C9EA89600C5F978 /* Frameworks */,
+				424ED8322C9EA89600C5F978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nuvento;
+			packageProductDependencies = (
+				424ED84F2C9EA93700C5F978 /* GoogleSignIn */,
+				424ED8512C9EA93700C5F978 /* GoogleSignInSwift */,
+			);
+			productName = nuvento;
+			productReference = 424ED8342C9EA89600C5F978 /* nuvento.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		424ED82C2C9EA89600C5F978 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					424ED8332C9EA89600C5F978 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 424ED82F2C9EA89600C5F978 /* Build configuration list for PBXProject "nuvento" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 424ED82B2C9EA89600C5F978;
+			packageReferences = (
+				424ED84E2C9EA93700C5F978 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 424ED8352C9EA89600C5F978 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				424ED8332C9EA89600C5F978 /* nuvento */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		424ED8322C9EA89600C5F978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424ED8442C9EA89700C5F978 /* Assets.xcassets in Resources */,
+				424ED8472C9EA89700C5F978 /* Base in Resources */,
+				424ED83F2C9EA89600C5F978 /* Base in Resources */,
+				42E5845D2C9EDC1800E79D6F /* DevicesListTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		424ED8302C9EA89600C5F978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42E584512C9EC94A00E79D6F /* CoreDataManager.swift in Sources */,
+				42E5846F2C9EF62D00E79D6F /* ipAddressModel.swift in Sources */,
+				42E584712C9EF6CA00E79D6F /* DetailsScreenViewController.swift in Sources */,
+				42E584662C9EF3B300E79D6F /* Webservice.swift in Sources */,
+				42E584632C9EE07B00E79D6F /* GoogleSignInManager.swift in Sources */,
+				42E584602C9EDFD500E79D6F /* NetworkManager.swift in Sources */,
+				424ED8382C9EA89600C5F978 /* AppDelegate.swift in Sources */,
+				42E5845C2C9EDC1800E79D6F /* DevicesListTableViewCell.swift in Sources */,
+				42E584752C9EFED600E79D6F /* Extension.swift in Sources */,
+				42E584732C9EF73F00E79D6F /* IPAddressInfoModel.swift in Sources */,
+				42E584582C9EDA3600E79D6F /* HomeViewController.swift in Sources */,
+				42E584772C9F079600E79D6F /* CustomLoader.swift in Sources */,
+				42E584692C9EF3F200E79D6F /* AddDeviceDetailsModel.swift in Sources */,
+				424ED83A2C9EA89600C5F978 /* SceneDelegate.swift in Sources */,
+				42E584542C9ECC3800E79D6F /* CoreDataModel.swift in Sources */,
+				42E584792C9F0B1300E79D6F /* LoaderManager.swift in Sources */,
+				42E5846C2C9EF43200E79D6F /* Constants.swift in Sources */,
+				42E5844D2C9EB59F00E79D6F /* LoginViewController.swift in Sources */,
+				424ED8422C9EA89600C5F978 /* nuvento.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		424ED83D2C9EA89600C5F978 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				424ED83E2C9EA89600C5F978 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		424ED8452C9EA89700C5F978 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				424ED8462C9EA89700C5F978 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		424ED8492C9EA89700C5F978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		424ED84A2C9EA89700C5F978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		424ED84C2C9EA89700C5F978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92B4YR8Z9E;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = nuvento/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nuvento.nuvento;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		424ED84D2C9EA89700C5F978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92B4YR8Z9E;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = nuvento/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nuvento.nuvento;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		424ED82F2C9EA89600C5F978 /* Build configuration list for PBXProject "nuvento" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424ED8492C9EA89700C5F978 /* Debug */,
+				424ED84A2C9EA89700C5F978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		424ED84B2C9EA89700C5F978 /* Build configuration list for PBXNativeTarget "nuvento" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424ED84C2C9EA89700C5F978 /* Debug */,
+				424ED84D2C9EA89700C5F978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		424ED84E2C9EA93700C5F978 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		424ED84F2C9EA93700C5F978 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 424ED84E2C9EA93700C5F978 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		424ED8512C9EA93700C5F978 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 424ED84E2C9EA93700C5F978 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		424ED8402C9EA89600C5F978 /* nuvento.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				424ED8412C9EA89600C5F978 /* nuvento.xcdatamodel */,
+			);
+			currentVersion = 424ED8412C9EA89600C5F978 /* nuvento.xcdatamodel */;
+			path = nuvento.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 424ED82C2C9EA89600C5F978 /* Project object */;
+}
